@@ -1,7 +1,6 @@
 {
   "links": [
     {
-      "text": "Home",
       "url": "#topo"
     },
     {
@@ -10,15 +9,15 @@
     },
     {
       "text": "O que fazemos",
-      "url": "o-que-fazemos"
+      "url": "#o-que-fazemos"
     },
     {
       "text": "Cases",
-      "url": "cases"
+      "url": "#cases"
     },
     {
       "text": "Contato",
-      "url": "contato"
+      "url": "#contato"
     }
   ],
   "linksMobile": [
@@ -36,11 +35,11 @@
     },
     {
       "text": "Cases",
-      "url": "cases"
+      "url": "#cases"
     },
     {
       "text": "Contato",
-      "url": "contato"
+      "url": "#contato"
     }
   ],
   "social": {},

@@ -1,5 +1,5 @@
 import { Link as ScrollLink } from "react-scroll";
-import logo from "/images/logo.png";
+import logo from "/images/logo.jpg";
 
 import "./desktop.css";
 
@@ -14,7 +14,7 @@ const Desktop = ({ isOpened, action, links }) => {
           href="/"
         >
           <img
-            className="xl:w-[95px] xl:h-[56px] md:w-[95px] lg:flex hidden"
+            className="xl:w-[90px] xl:h-[70px] md:w-[95px] lg:flex hidden"
             src={logo}
             alt="Logo Header"
           />
@@ -28,7 +28,7 @@ const Desktop = ({ isOpened, action, links }) => {
         </a>
 
         <button
-          className={`menu-toggle focus:outline-none flex lg:hidden ${
+          className={`menu-toggle bg-white focus:outline-none flex lg:hidden ${
             isOpened && "menu-toggle-active"
           }`}
           onClick={action}
@@ -44,11 +44,11 @@ const Desktop = ({ isOpened, action, links }) => {
             <li className="text-sm linha" key={index}>
               {/* Link de rolagem suave */}
               <ScrollLink
-                className="cursor-pointer uppercase"
+                className="cursor-pointer uppercase text-black"
                 to={link.url.substring(1)}
                 spy={true}
                 smooth={true}
-                duration={100}
+                duration={300}
                 offset={-98}
               >
                 {link.text}

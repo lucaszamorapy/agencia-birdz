@@ -15,6 +15,7 @@ export default {
       },
       colors: {
         yellowBirdz: "#FFCF00",
+        yellowHover: "#D9B000",
         blackBirdz: "#242424",
         grayBirdz: "#3C3C3C",
       },

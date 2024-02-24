@@ -1,5 +1,8 @@
 import React, { useState, useEffect } from "react";
 import dynamicTextData from "../config/data.json";
+import Button from "../utils/button/ButtonBirdz";
+import SlideClient from "../components/slide-client/SlideClient";
+import QuemSomos from "../components/quem-somos/QuemSomos";
 
 const Home = () => {
   const [text1, setText1] = useState("");
@@ -10,12 +13,13 @@ const Home = () => {
   const [deleting2, setDeleting2] = useState(false);
   const [cursorVisible, setCursorVisible] = useState(true);
 
-  const wordsList1 = ["website", "mobile app", "social media", "marketing"];
+
+  const wordsList1 = ["website", "mobile app", "design", "marketing"];
   const wordsList2 = [
-    "possibilidades",
+    "pontencial",
     "soluções",
     "inovações",
-    "oportunidades",
+    "recursos",
   ];
 
   useEffect(() => {
@@ -57,14 +61,14 @@ const Home = () => {
       }
     }, 100); // Intervalo de 150ms entre cada letra para o segundo texto
 
-    const cursorTimer = setInterval(() => {
-      setCursorVisible((prev) => !prev);
-    }, 500); // Intervalo de 500ms para piscar o cursor
+    // const cursorTimer = setInterval(() => {
+    //   setCursorVisible((prev) => !prev);
+    // }, 100); // Intervalo de 500ms para piscar o cursor
 
     return () => {
       clearTimeout(timer1);
       clearTimeout(timer2);
-      clearInterval(cursorTimer);
+      // clearInterval(cursorTimer);
     };
   }, [
     text1,
@@ -79,38 +83,42 @@ const Home = () => {
 
   return (
     <>
-      <section className="mt-40">
+      <section className="mt-52">
         <div className="container">
-          <div className="px-5 grid grid-cols-1 gap-10 lg:grid-cols-2 lg:px-0">
+          <div className="px-5 grid grid-cols-1 gap-10 lg:gap-52 lg:grid-cols-2 lg:px-0">
             <div className="flex flex-col gap-2">
               <h1 className="text-black text-4xl font-regular lg:text-6xl">
                 Mais{" "}
                 <span className="font-bold text-yellowBirdz">
                   {text1}
-                  {cursorVisible && (
+                  {/* {cursorVisible && (
                     <span className="cursor text-black font-light">|</span>
-                  )}
+                  )} */}
                 </span>
               </h1>
               <h1 className="text-black text-4xl font-regular lg:text-6xl">
                 mais{" "}
                 <span className="font-bold text-yellowBirdz">
                   {text2}
-                  {cursorVisible && (
+                  {/* {cursorVisible && (
                     <span className="cursor text-black font-light">|</span>
-                  )}
+                  )} */}
                 </span>
               </h1>
-              <p className="mt-7 text-blackBirdz text-sm lg:text-md">
+              <p className="mt-7 text-blackBirdz lg:text-md tracking-normal">
                 {dynamicTextData.dynamicText}
               </p>
-              <p className="mt-7 text-blackBirdz text-sm lg:text-md">
+              <p className=" text-blackBirdz lg:text-md tracking-normal">
                 {dynamicTextData.dynamicText2}
               </p>
+              <Button style={"mt-7 px-0 w-[190px] text-center"} name={"começar agora"}/>
+              <SlideClient />
             </div>
+              <img src="./images/bg-home.jpg" className="object-cover w-[800px] h-[600px]" alt="" />
           </div>
         </div>
       </section>
+      <QuemSomos />
     </>
   );
 };
