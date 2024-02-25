@@ -65,13 +65,13 @@ const QuemSomos = () => {
 
   return (
     // Componente de seção "Quem somos?"
-    <section id="quem-somos" className="mt-52">
+    <section id="quem-somos" className="mt-40">
       <div className="container">
         <div className="grid grid-cols-1 gap-10 px-5 lg:grid-cols-2 lg:px-0 lg:gap-52">
           <div className="flex flex-col gap-10">
-            <h1 className="text-black text-5xl font-semibold uppercase">Quem somos?</h1>
+            <h1 className="text-black text-4xl font-semibold uppercase lg:text-5xl">Quem somos?</h1>
             <p className="text-blackBirdz tracking-normal">{data.textAbout}</p>
-            <div className="flex gap-20">
+            <div className="flex flex-wrap items-center gap-5 lg:gap-20 lg:flex-nowrap">
               <div className="flex-col">
                 <span className="text-yellowBirdz font-semibold text-4xl">+{projects}</span>
                 <p className="text-black text-lg font-semibold uppercase">Projetos</p>

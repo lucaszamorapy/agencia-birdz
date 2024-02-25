@@ -15,7 +15,7 @@ const Home = () => {
   const [cursorVisible, setCursorVisible] = useState(true);
 
 
-  const wordsList1 = ["website", "mobile app", "design", "marketing"];
+  const wordsList1 = ["website", "branding", "design", "marketing"];
   const wordsList2 = [
     "pontencial",
     "soluções",
@@ -84,11 +84,11 @@ const Home = () => {
 
   return (
     <>
-      <section className="mt-52">
+      <section className="mt-40">
         <div className="container">
           <div className="px-5 grid grid-cols-1 gap-10 lg:gap-52 lg:grid-cols-2 lg:px-0">
             <div className="flex flex-col gap-2">
-              <h1 className="text-black text-4xl font-regular lg:text-6xl">
+              <h1 className="text-black text-4xl font-regular lg:text-5xl xl:text-6xl ">
                 Mais{" "}
                 <span className="font-bold text-yellowBirdz">
                   {text1}
@@ -97,7 +97,7 @@ const Home = () => {
                   )} */}
                 </span>
               </h1>
-              <h1 className="text-black text-4xl font-regular lg:text-6xl">
+              <h1 className="text-black text-4xl font-regular lg:text-5xl xl:text-6xl ">
                 mais{" "}
                 <span className="font-bold text-yellowBirdz">
                   {text2}
