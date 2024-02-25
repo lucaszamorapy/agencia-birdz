@@ -38,9 +38,9 @@ const Cases = () => {
 
   return (
     <>
-      <section id="cases">
+      <section id="cases" className="mt-20">
         <div className="container">
-          <h1 className="text-4xl text-black uppercase font-semibold text-center mt-7 lg:text-5xl">Cases</h1>
+          <h1 className="text-4xl text-black uppercase font-semibold text-center lg:text-5xl">Cases</h1>
           <Swiper {...swiperSettings} navigation={true} modules={[Navigation]}>
             {imageNumbers.map((number) => (
               <SwiperSlide key={number} className="">
