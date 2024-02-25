@@ -1,5 +1,6 @@
 import { useState } from "react";
 import InputField from "../../utils/inputfield/InputField";
+import Button from "../../utils/button/ButtonBirdz";
 
 
 const isEmailValid = (email) => {
@@ -67,7 +68,7 @@ const Forms = () => {
 
       if (response.ok) {
         setResponseMessage(
-          `Muito obrigado por entrar em contato, em breve entraremos em contato com ${name}.`
+          `Muito obrigado por entrar em contato, em breve retornamos.`
         );
       } else {
         const data = await response.json();
@@ -81,8 +82,8 @@ const Forms = () => {
   };
 
   return (
-    <div className="flex flex-col px-10 w-[350px] bg-black py-10 rounded-lg shadow-lg lg:w-auto">
-      <h1 className="text-2xl uppercase text-yellowBirdz font-semibold mb-10">
+    <div className="flex flex-col px-10 w-[350px] bg-black py-10 rounded-lg shadow-lg lg:w-auto lg:h-[450px]">
+      <h1 className="text-2xl uppercase text-yellowBirdz font-semibold mb-5">
         Entre em contato
       </h1>
       <form className="space-y-4" onSubmit={handleSubmit}>

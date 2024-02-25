@@ -1,5 +1,5 @@
 import { Link } from "react-scroll";
-import { FaFacebook, FaLinkedin, FaYoutube, FaInstagram } from "react-icons/fa";
+import { FaFacebook, FaLinkedin,  FaInstagram } from "react-icons/fa";
 import { useEffect } from "react";
 
 const Mobile = ({ isOpened, links }) => {
@@ -45,40 +45,34 @@ const Mobile = ({ isOpened, links }) => {
           ))}
         </ul>
 
-        <ul className="flex justify-center gap-x-10 px-4 bg-[#2E2E2E] py-4">
-          <li>
-            <Link
-              to="https://www.facebook.com/agenciabirdz"
-              target="_blank"
-            >
-              <FaFacebook size={32} color="#FFFFFF" />
-            </Link>
-          </li>
-          <li>
-            <Link
-              to="https://br.linkedin.com/company/cl%C3%ADnica-cauchioli"
-              target="_blank"
-            >
-              <FaLinkedin size={32} color="#FFFFFF" />
-            </Link>
-          </li>
-          {/* <li>
-            <Link
-              to="https://www.youtube.com/@clinicacauchioli1548"
-              target="_blank"
-            >
-              <FaYoutube size={32} color="#FFFFFF" />
-            </Link>
-          </li> */}
-          <li>
-            <Link
-              href="https://www.instagram.com/agenciabirdz/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <FaInstagram size={32} color="#FFFFFF" />
-            </Link>
-          </li>
+        <ul className="flex justify-center gap-x-10 px-4 bg-blackBirdz py-4">
+        <li>
+                <a
+                  href="https://www.facebook.com/agenciabirdz"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FaFacebook size={32} color="#FFFFFF" />
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/company/agencia-birdz/about/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FaLinkedin size={32} color="#FFFFFF" />
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.instagram.com/agenciabirdz/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FaInstagram size={32} color="#FFFFFF" />
+                </a>
+              </li>
         </ul>
       </div>
     </nav>

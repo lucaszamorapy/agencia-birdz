@@ -6,6 +6,7 @@ import QuemSomos from "../components/quem-somos/QuemSomos";
 import WeDo from "../components/o-que-fazemos/WeDo";
 import Cases from "../components/cases/Cases";
 import Contato from "../components/contato/Contato";
+import Footer from "../components/footer/Footer";
 
 const Home = () => {
   const [text1, setText1] = useState("");
@@ -124,6 +125,7 @@ const Home = () => {
       <WeDo />
       <Cases />
       <Contato />
+      <Footer />
     </>
   );
 };

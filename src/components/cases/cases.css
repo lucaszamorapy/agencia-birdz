@@ -9,11 +9,11 @@
   border-radius: 10px;
   justify-content: center;
   align-items: center;
+  top: 150px;
 }
 
 /* Estilos para quando o cursor estiver sobre os botões */
 .swiper-button-prev:hover,
 .swiper-button-next:hover {
   background-color: rgba(0, 0, 0, 0.8);
-  /* Altera a cor de fundo ao passar o mouse */
 }
