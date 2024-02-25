@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from "react";
 import dynamicTextData from "../config/data.json";
-import Button from "../utils/button/ButtonBirdz";
 import SlideClient from "../components/slide-client/SlideClient";
 import QuemSomos from "../components/quem-somos/QuemSomos";
 import WeDo from "../components/o-que-fazemos/WeDo";
 import Cases from "../components/cases/Cases";
 import Contato from "../components/contato/Contato";
 import Footer from "../components/footer/Footer";
+import { Link } from "react-scroll"; // Importe o Link do react-scroll
 
 const Home = () => {
   const [text1, setText1] = useState("");
@@ -19,7 +19,7 @@ const Home = () => {
 
   const wordsList1 = ["website", "branding", "design", "marketing"];
   const wordsList2 = [
-    "pontencial",
+    "potencial",
     "soluções",
     "inovações",
     "recursos",
@@ -43,7 +43,7 @@ const Home = () => {
           setDeleting1(true);
         }
       }
-    }, 100); // Intervalo de 150ms entre cada letra para o primeiro texto
+    }, 100); // Intervalo de 100ms entre cada letra para o primeiro texto
 
     const timer2 = setTimeout(() => {
       if (deleting2) {
@@ -62,16 +62,11 @@ const Home = () => {
           setDeleting2(true);
         }
       }
-    }, 100); // Intervalo de 150ms entre cada letra para o segundo texto
-
-    // const cursorTimer = setInterval(() => {
-    //   setCursorVisible((prev) => !prev);
-    // }, 100); // Intervalo de 500ms para piscar o cursor
+    }, 100); // Intervalo de 100ms entre cada letra para o segundo texto
 
     return () => {
       clearTimeout(timer1);
       clearTimeout(timer2);
-      // clearInterval(cursorTimer);
     };
   }, [
     text1,
@@ -86,7 +81,7 @@ const Home = () => {
 
   return (
     <>
-      <section id="topo"className="mt-40">
+      <section id="topo" className="mt-40">
         <div className="container">
           <div className="px-5 grid grid-cols-1 gap-10 lg:gap-52 lg:grid-cols-2 lg:px-0">
             <div className="flex flex-col gap-2">
@@ -94,37 +89,39 @@ const Home = () => {
                 Mais{" "}
                 <span className="font-bold text-yellowBirdz">
                   {text1}
-                  {/* {cursorVisible && (
-                    <span className="cursor text-black font-light">|</span>
-                  )} */}
                 </span>
               </h1>
               <h1 className="text-black text-4xl font-regular lg:text-5xl xl:text-6xl ">
                 mais{" "}
                 <span className="font-bold text-yellowBirdz">
                   {text2}
-                  {/* {cursorVisible && (
-                    <span className="cursor text-black font-light">|</span>
-                  )} */}
                 </span>
               </h1>
               <p className="mt-7 text-blackBirdz lg:text-md tracking-normal">
                 {dynamicTextData.dynamicText}
               </p>
-              <p className=" text-blackBirdz lg:text-md tracking-normal">
+              <p className="text-blackBirdz lg:text-md tracking-normal">
                 {dynamicTextData.dynamicText2}
               </p>
-              <Button style={"mt-7 px-0 w-[190px] text-center"} name={"começar agora"}/>
-              <SlideClient style={"mt-7"}/>
+              {/* Substitua o botão por um Link do react-scroll */}
+              <Link
+                to="contato"
+                smooth={true}
+                duration={500}
+                className="mt-7 px-0 w-[190px] text-center bg-yellowBirdz hover:bg-yellowHover text-white font-bold py-2 rounded cursor-pointer"
+              >
+                Começar agora
+              </Link>
+              <SlideClient style={"mt-7"} />
             </div>
-              <img src="./images/bg-home.jpg" className="object-cover w-[800px] h-[600px]" alt="" />
+            <img src="./images/bg-home.jpg" className="object-cover w-[800px] h-[600px]" alt="" />
           </div>
         </div>
       </section>
       <QuemSomos />
       <WeDo />
       <Cases />
-      <Contato />
+      <Contato id="contato" /> {/* Adicione o id à seção de Contato */}
       <Footer />
     </>
   );
