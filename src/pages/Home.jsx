@@ -3,6 +3,7 @@ import dynamicTextData from "../config/data.json";
 import Button from "../utils/button/ButtonBirdz";
 import SlideClient from "../components/slide-client/SlideClient";
 import QuemSomos from "../components/quem-somos/QuemSomos";
+import WeDo from "../components/o-que-fazemos/WeDo";
 
 const Home = () => {
   const [text1, setText1] = useState("");
@@ -119,6 +120,7 @@ const Home = () => {
         </div>
       </section>
       <QuemSomos />
+      <WeDo />
     </>
   );
 };

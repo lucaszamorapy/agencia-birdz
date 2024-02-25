@@ -1,0 +1,36 @@
+{
+  "o-que-fazemos": [
+    {
+      "img": "./images/we-do/1.png",
+      "tittle": "Ánalise de Dados"
+    },
+    {
+      "img": "./images/we-do/2.png",
+      "tittle": "Artes e Design"
+    },
+    {
+      "img": "./images/we-do/3.png",
+      "tittle": "Brading"
+    },
+    {
+      "img": "./images/we-do/4.png",
+      "tittle": "Consultoria em mkt"
+    },
+    {
+      "img": "./images/we-do/5.png",
+      "tittle": "Produção de Conteúdo"
+    },
+    {
+      "img": "./images/we-do/6.png",
+      "tittle": "Sites"
+    },
+    {
+      "img": "./images/we-do/7.png",
+      "tittle": "Web-vídeos"
+    },
+    {
+      "img": "./images/we-do/8.png",
+      "tittle": "Social Media"
+    }
+  ]
+}
