@@ -82,7 +82,7 @@ const Forms = () => {
   };
 
   return (
-    <div className="flex flex-col px-10 w-[350px] bg-black py-10 rounded-lg shadow-lg lg:w-auto ">
+    <div className="flex flex-col px-10 w-[320px] bg-black py-10 rounded-lg shadow-lg lg:w-auto ">
       <h1 className="text-2xl uppercase text-yellowBirdz font-semibold mb-5">
         Entre em contato
       </h1>
