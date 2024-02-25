@@ -5,6 +5,7 @@ import SlideClient from "../components/slide-client/SlideClient";
 import QuemSomos from "../components/quem-somos/QuemSomos";
 import WeDo from "../components/o-que-fazemos/WeDo";
 import Cases from "../components/cases/Cases";
+import Contato from "../components/contato/Contato";
 
 const Home = () => {
   const [text1, setText1] = useState("");
@@ -13,7 +14,6 @@ const Home = () => {
   const [currentIndex2, setCurrentIndex2] = useState(0);
   const [deleting1, setDeleting1] = useState(false);
   const [deleting2, setDeleting2] = useState(false);
-  const [cursorVisible, setCursorVisible] = useState(true);
 
 
   const wordsList1 = ["website", "branding", "design", "marketing"];
@@ -123,6 +123,7 @@ const Home = () => {
       <QuemSomos />
       <WeDo />
       <Cases />
+      <Contato />
     </>
   );
 };
