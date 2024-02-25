@@ -48,7 +48,7 @@ const Mobile = ({ isOpened, links }) => {
         <ul className="flex justify-center gap-x-10 px-4 bg-[#2E2E2E] py-4">
           <li>
             <Link
-              to="https://www.facebook.com/centromedicocauchioli"
+              to="https://www.facebook.com/agenciabirdz"
               target="_blank"
             >
               <FaFacebook size={32} color="#FFFFFF" />
@@ -62,17 +62,17 @@ const Mobile = ({ isOpened, links }) => {
               <FaLinkedin size={32} color="#FFFFFF" />
             </Link>
           </li>
-          <li>
+          {/* <li>
             <Link
               to="https://www.youtube.com/@clinicacauchioli1548"
               target="_blank"
             >
               <FaYoutube size={32} color="#FFFFFF" />
             </Link>
-          </li>
+          </li> */}
           <li>
             <Link
-              href="https://www.instagram.com/centromedicocauchioli/"
+              href="https://www.instagram.com/agenciabirdz/"
               target="_blank"
               rel="noopener noreferrer"
             >

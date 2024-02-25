@@ -1,0 +1,19 @@
+/* Estilos personalizados para a navegação do Swiper */
+.swiper-button-prev,
+.swiper-button-next {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 50px;
+  height: 150px;
+  display: flex;
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Estilos para quando o cursor estiver sobre os botões */
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+  /* Altera a cor de fundo ao passar o mouse */
+}

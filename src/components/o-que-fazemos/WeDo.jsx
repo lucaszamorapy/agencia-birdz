@@ -1,5 +1,6 @@
 import React from 'react'
 import Card from '../../utils/card/Card'
+import Cases from '../cases/Cases'
 
 const WeDo = () => {
   return (

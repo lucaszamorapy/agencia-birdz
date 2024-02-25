@@ -4,6 +4,7 @@ import Button from "../utils/button/ButtonBirdz";
 import SlideClient from "../components/slide-client/SlideClient";
 import QuemSomos from "../components/quem-somos/QuemSomos";
 import WeDo from "../components/o-que-fazemos/WeDo";
+import Cases from "../components/cases/Cases";
 
 const Home = () => {
   const [text1, setText1] = useState("");
@@ -113,7 +114,7 @@ const Home = () => {
                 {dynamicTextData.dynamicText2}
               </p>
               <Button style={"mt-7 px-0 w-[190px] text-center"} name={"começar agora"}/>
-              <SlideClient />
+              <SlideClient style={"mt-7"}/>
             </div>
               <img src="./images/bg-home.jpg" className="object-cover w-[800px] h-[600px]" alt="" />
           </div>
@@ -121,6 +122,7 @@ const Home = () => {
       </section>
       <QuemSomos />
       <WeDo />
+      <Cases />
     </>
   );
 };

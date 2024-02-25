@@ -2,9 +2,9 @@ import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Autoplay } from "swiper/modules";
 import "swiper/css";
-import "./slide-client.css";
 
-const SlideClient = () => {
+
+const SlideClient = ({ style }) => {
   // Função para gerar o caminho da imagem com base no número
   const getImagePath = (number) => {
     return `/images/clientes/${number}.png`; // Caminho para a pasta public/images/clientes
@@ -40,7 +40,7 @@ const SlideClient = () => {
 
   return (
     <>
-      <Swiper {...swiperSettings} className="mySwiper">
+      <Swiper {...swiperSettings} className={`${style} w-full h-[200px]`}>
         {imageNumbers.map((number) => (
           <SwiperSlide key={number}>
             <img src={getImagePath(number)} alt={`Slide ${number}`} />
